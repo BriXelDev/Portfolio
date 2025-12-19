@@ -4,6 +4,73 @@
   box-sizing: border-box;
 }
 
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.scroll-animation {
+  --animation-delay: 0ms;
+}
+
+.scroll-animation.animate-hidden {
+  opacity: 0;
+}
+
+.scroll-animation.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out var(--animation-delay) forwards;
+}
+
+.scroll-animation.animate-slideUp {
+  animation: slideUp 0.8s ease-out var(--animation-delay) forwards;
+}
+
+.scroll-animation.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out var(--animation-delay) forwards;
+}
+
+.scroll-animation.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out var(--animation-delay) forwards;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
