@@ -9,8 +9,8 @@ const Header: React.FC = () => {
         <ul>
           <li><a href="#about">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
           <li><a href="#certificates">Certificados</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
       <div className="github">
