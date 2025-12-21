@@ -87,6 +87,12 @@ body {
   height: 32px;
   cursor: pointer;
   filter: brightness(0) invert(1);
+  transition: 0.3s all ease;
+}
+
+.menu-icon:hover {
+  filter: brightness(0) invert(0.7);
+  transition: 0.3s all ease;
 }
 
 /* Header */
