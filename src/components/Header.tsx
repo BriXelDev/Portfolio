@@ -3,6 +3,7 @@ import React from 'react';
 const Header: React.FC = () => {
   return (
     <header>
+      <img src="/sources/menu.svg" alt="Menu Icon" className="menu-icon" />
       <h1>BriXelDev</h1>
       <nav>
         <ul>
