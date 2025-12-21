@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header>
-      <img src="/sources/menu.svg" alt="Menu Icon" className="menu-icon" />
+      <img 
+        src="/sources/menu.svg" 
+        alt="Menu Icon" 
+        className="menu-icon" 
+        onClick={handleMenuClick}
+        style={{ transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)' }}
+      />
       <h1>BriXelDev</h1>
       <nav>
         <ul>
