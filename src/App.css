@@ -82,6 +82,13 @@ body {
   background-color: #f9f9f9;
 }
 
+.menu-icon{
+  width: 3vw;
+  height: 32px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+
 /* Header */
 header {
   display: flex;
